@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Stopwatch">
+
+    <TextView android:layout_width="385dp"
+              android:layout_height="86dp"
+              android:id="@+id/textView4"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginLeft="2dp"
+              android:layout_marginStart="2dp"
+              android:layout_marginEnd="2dp"
+              android:layout_marginRight="2dp"
+              android:text="stopwatch : "
+              android:textSize="30sp"
+              android:gravity="center"
+              app:layout_constraintHorizontal_bias="0.725"
+              app:layout_constraintBottom_toTopOf="@+id/button4"/>
+    <Button
+            android:text="Clıck Counter"
+            android:textSize="20sp"
+            android:layout_width="145dp"
+            android:layout_height="73dp" android:id="@+id/button4"
+            android:layout_marginBottom="24dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginEnd="28dp"
+            android:layout_marginRight="28dp"
+
+    />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="380dp"
+            android:layout_height="50dp"
+            android:id="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintBottom_toTopOf="@+id/textView4">
+        <Button android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/button3"
+                android:text="Start"
+                android:textSize="15sp"
+
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"/>
+        <Button
+                android:text="pause"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/pause"
+        />
+        <Button
+                android:text="resume"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/resume"
+        />
+        <Button
+                android:text="Stop"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="51dp"
+                android:id="@+id/button5"
+
+        />
+    </LinearLayout>
+    <ImageView
+            android:src="@drawable/kronometre"
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:id="@+id/imageView3"
+            android:layout_marginTop="32dp" android:layout_marginBottom="22dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="13dp" android:layout_marginStart="13dp" android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
